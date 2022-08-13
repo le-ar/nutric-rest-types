@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
+    "prepack": "yarn build",
     "prepare": "npm run build"
   },
   "devDependencies": {
