@@ -1,7 +1,10 @@
 export { CreateEnergyContentDtoZ } from "./dto/CreateEnergyContent";
-export { CreateProductDtoZ } from "./dto/CreateProduct";
+export {
+  CreateProductDtoZ,
+  CreateProductResponseDtoZ,
+} from "./dto/CreateProduct";
 export { CreateVitaminContentDtoZ } from "./dto/CreateVitaminContent";
-export { GetProductsDtoZ } from "./dto/GetProducts";
+export { GetProductsResponseDtoZ } from "./dto/GetProducts";
 export { EnergyContentZ } from "./models/EnergyContent";
 export { ProductZ } from "./models/Product";
 export { ProductCategory, ProductCategoryZ } from "./models/ProductCategory";
