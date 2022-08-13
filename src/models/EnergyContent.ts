@@ -1,10 +1,11 @@
 import { z } from "zod";
-import { CreateVitaminContentDtoZ } from "./CreateVitaminContent";
+import { VitaminContentZ } from "./VitaminContent";
 
-export const CreateEnergyContentDtoZ = z.object({
+export const EnergyContentZ = z.object({
+  uid: z.string().uuid(),
   calories: z.number().int().min(0),
   proteins: z.number().int().min(0),
   fats: z.number().int().min(0),
   carbohydrates: z.number().int().min(0),
-  vitamins: z.array(CreateVitaminContentDtoZ),
+  vitamins: z.array(VitaminContentZ),
 });
