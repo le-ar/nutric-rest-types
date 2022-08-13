@@ -9,6 +9,7 @@ export const RecipeZ = z.object({
   isPublic: z.boolean(),
   name: z.string().min(4).max(64),
   img: z.string(),
+  shortInfo: z.string().min(8).max(256),
   weightType: WeightTypeZ,
   weight: z.number().int().min(0),
   energyContent: EnergyContentZ,
