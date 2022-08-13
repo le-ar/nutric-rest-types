@@ -11,6 +11,7 @@ const CreateRecipeProductDtoZ = z.object({
 export const CreateRecipeDtoZ = RecipeZ.pick({
   name: true,
   img: true,
+  shortInfo: true,
   weightType: true,
   weight: true,
 }).extend({
