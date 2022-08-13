@@ -1,9 +1,9 @@
 export { CreateEnergyContentDtoZ } from "./dto/CreateEnergyContent";
-export { CreateRecipeDtoZ, CreateRecipeResponseDtoZ } from "./dto/CreateRecipe";
 export {
   CreateProductDtoZ,
   CreateProductResponseDtoZ,
 } from "./dto/CreateProduct";
+export { CreateRecipeDtoZ, CreateRecipeResponseDtoZ } from "./dto/CreateRecipe";
 export { CreateVitaminContentDtoZ } from "./dto/CreateVitaminContent";
 export { GetProductsResponseDtoZ } from "./dto/GetProducts";
 export { GetRecipesResponseDtoZ } from "./dto/GetRecipes";
@@ -15,6 +15,7 @@ export {
   RecipeInfoBlockType,
   RecipeInfoBlockTypeZ,
 } from "./models/RecipeInfoBlockType";
+export { RecipeProductZ } from "./models/RecipeProduct";
 export { RecipeStepZ } from "./models/RecipeStep";
 export { VitaminZ } from "./models/Vitamin";
 export { VitaminContentZ } from "./models/VitaminContent";
