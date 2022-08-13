@@ -6,6 +6,7 @@ import { WeightTypeZ } from "./WeightType";
 
 export const RecipeZ = z.object({
   uid: z.string().uuid(),
+  isPublic: z.boolean(),
   name: z.string().min(4).max(64),
   img: z.string(),
   weightType: WeightTypeZ,
