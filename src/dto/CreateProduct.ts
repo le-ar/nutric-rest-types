@@ -11,6 +11,6 @@ export const CreateProductDtoZ = ProductZ.pick({
   energyContent: CreateEnergyContentDtoZ,
 });
 
-export const CreateProductResolveDtoZ = z.object({
+export const CreateProductResponseDtoZ = z.object({
   uid: z.string().uuid(),
 });
