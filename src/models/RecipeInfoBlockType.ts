@@ -3,6 +3,7 @@ import { z } from "zod";
 export enum RecipeInfoBlockType {
   CURRENT = "CURRENT",
   PREV_DAY = "PREV_DAY",
+  MORNING = "MORNING",
   NONE = "NONE",
 }
 
