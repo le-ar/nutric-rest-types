@@ -1,3 +1,4 @@
+export { CreateClientDtoZ, CreateClientResponseDtoZ } from "./dto/CreateClient";
 export { CreateEnergyContentDtoZ } from "./dto/CreateEnergyContent";
 export {
   CreateProductDtoZ,

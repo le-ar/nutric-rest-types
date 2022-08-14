@@ -7,6 +7,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.3.tgz#432c89796eab539b7a30b7b8801a727b585238a4"
   integrity sha512-LJgzOEwWuMTBxHzgBR/fhhBOWrvBjvO+zPteUgbbuQi80rYIZHrk1mNbRUqPZqSLP2H7Rwt1EFLL/tNLD1Xx/w==
 
+phone@^3.1.25:
+  version "3.1.25"
+  resolved "https://registry.yarnpkg.com/phone/-/phone-3.1.25.tgz#de5f8238110375831f953535c65c28e98347cfea"
+  integrity sha512-VA3vWF1WV/0DrpXRnANpZVQpT6wWO8GUdmz6RzyMNfSEV9qWZ2pX6fLYUXAIaYhMs/Bievqv5aXQTkK+e2Wp+Q==
+
 typescript@^4.7.4:
   version "4.7.4"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.7.4.tgz#1a88596d1cf47d59507a1bcdfb5b9dfe4d488235"
