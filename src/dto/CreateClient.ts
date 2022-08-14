@@ -4,7 +4,7 @@ import { phone } from "phone";
 export const CreateClientDtoZ = z.object({
   lastName: z.string().min(1),
   firstName: z.string().min(1),
-  middleName: z.string().min(1),
+  middleName: z.string().min(1).optional(),
   phone: z.string().refine(
     (val) => phone(val).isValid,
     (val) => ({
