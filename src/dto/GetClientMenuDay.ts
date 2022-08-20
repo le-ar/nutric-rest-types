@@ -10,18 +10,26 @@ export const GetClientMenuDayResponseZ = z.object({
   month: z.number().int().min(1).max(12),
   year: z.number().int(),
   clientEnergyContent: EnergyContentZ.optional(),
-  parts: ClientMenuDayPartZ.extend({
-    ingridients: ClientMenuDayIngridientZ.extend({
-      name: z.string(),
-      energyContent: EnergyContentZ,
-      alternatives: z
-        .array(
-          ClientMenuDayIngridientZ.extend({
-            name: z.string(),
-            energyContent: EnergyContentZ,
-          })
-        )
-        .optional(),
-    }).optional(),
-  }),
+  parts: z
+    .array(
+      ClientMenuDayPartZ.extend({
+        ingridients: z
+          .array(
+            ClientMenuDayIngridientZ.extend({
+              name: z.string(),
+              energyContent: EnergyContentZ,
+              alternatives: z
+                .array(
+                  ClientMenuDayIngridientZ.extend({
+                    name: z.string(),
+                    energyContent: EnergyContentZ,
+                  })
+                )
+                .optional(),
+            })
+          )
+          .optional(),
+      })
+    )
+    .optional(),
 });
