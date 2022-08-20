@@ -6,6 +6,7 @@ export {
 } from "./dto/CreateProduct";
 export { CreateRecipeDtoZ, CreateRecipeResponseDtoZ } from "./dto/CreateRecipe";
 export { CreateVitaminContentDtoZ } from "./dto/CreateVitaminContent";
+export { GetMeResponseDtoZ } from "./dto/GetMe";
 export { GetProductsResponseDtoZ } from "./dto/GetProducts";
 export { GetRecipesResponseDtoZ } from "./dto/GetRecipes";
 export { EnergyContentZ } from "./models/EnergyContent";
