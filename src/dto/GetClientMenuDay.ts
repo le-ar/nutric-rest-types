@@ -22,6 +22,6 @@ export const GetClientMenuDayResponseZ = z.object({
           })
         )
         .optional(),
-    }),
+    }).optional(),
   }),
 });
