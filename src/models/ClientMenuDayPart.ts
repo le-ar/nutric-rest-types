@@ -17,7 +17,7 @@ export const ClientMenuDayIngridientZ = z.object({
 export const ClientMenuDayPartZ = z.object({
   partName: z.string().min(1),
   icon: z.string().optional(),
-  ingridients: ClientMenuDayIngridientZ.extend({
+  ingridients: z.array(ClientMenuDayIngridientZ.extend({
     alternatives: z.array(ClientMenuDayIngridientZ).optional(),
-  }),
+  })),
 });
