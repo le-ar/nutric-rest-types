@@ -6,7 +6,7 @@ export const GetClientsResponseDtoZ = z.array(
     userProfile: z.object({
       firstName: z.string(),
       lastName: z.string(),
-      middleName: z.string().nullable().optional(),
+      middleName: z.string().optional().nullable(),
     }),
   })
 );
