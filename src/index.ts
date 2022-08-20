@@ -9,6 +9,7 @@ export { CreateRecipeDtoZ, CreateRecipeResponseDtoZ } from "./dto/CreateRecipe";
 export { CreateVitaminContentDtoZ } from "./dto/CreateVitaminContent";
 export { DeleteClientEnergyDtoZ } from "./dto/DeleteClientEnergy";
 export { GetClientMenuDayResponseZ } from "./dto/GetClientMenuDay";
+export { GetClientsResponseDtoZ } from "./dto/GetClients";
 export { GetMeResponseDtoZ } from "./dto/GetMe";
 export { GetProductsResponseDtoZ } from "./dto/GetProducts";
 export { GetRecipesResponseDtoZ } from "./dto/GetRecipes";
