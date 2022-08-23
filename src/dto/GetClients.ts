@@ -8,5 +8,8 @@ export const GetClientsResponseDtoZ = z.array(
       lastName: z.string(),
       middleName: z.string().nullable(),
     }),
+    userContact: z.object({
+      phone: z.string(),
+    }),
   })
 );
