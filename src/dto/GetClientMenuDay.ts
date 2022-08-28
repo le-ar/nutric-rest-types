@@ -4,6 +4,7 @@ import {
   ClientMenuDayPartZ,
 } from "../models/ClientMenuDayPart";
 import { EnergyContentZ } from "../models/EnergyContent";
+import { WeightTypeZ } from "../models/WeightType";
 
 export const GetClientMenuDayResponseZ = z.object({
   day: z.number().int().min(1).max(31),
@@ -18,11 +19,13 @@ export const GetClientMenuDayResponseZ = z.object({
             ClientMenuDayIngridientZ.extend({
               name: z.string(),
               energyContent: EnergyContentZ,
+              weightType: WeightTypeZ,
               alternatives: z
                 .array(
                   ClientMenuDayIngridientZ.extend({
                     name: z.string(),
                     energyContent: EnergyContentZ,
+                    weightType: WeightTypeZ,
                   })
                 )
                 .optional(),
