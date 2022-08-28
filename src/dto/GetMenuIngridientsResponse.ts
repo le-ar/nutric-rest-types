@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { EnergyContentZ } from "../models/EnergyContent";
+import { WeightTypeZ } from "../models/WeightType";
 
 export enum MenuIngrient {
   RECIPE = "RECIPE",
@@ -11,6 +12,7 @@ export const GetMenuIngridientsResponseZ = z.array(
     uid: z.string().uuid(),
     name: z.string(),
     type: z.nativeEnum(MenuIngrient),
+    weightType: WeightTypeZ,
     energyContent: EnergyContentZ,
   })
 );
