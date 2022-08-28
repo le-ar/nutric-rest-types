@@ -11,6 +11,10 @@ export { DeleteClientEnergyDtoZ } from "./dto/DeleteClientEnergy";
 export { GetClientMenuDayResponseZ } from "./dto/GetClientMenuDay";
 export { GetClientsResponseDtoZ } from "./dto/GetClients";
 export { GetMeResponseDtoZ } from "./dto/GetMe";
+export {
+  GetMenuIngridientsResponseZ,
+  MenuIngrient,
+} from "./dto/GetMenuIngridientsResponse";
 export { GetProductsResponseDtoZ } from "./dto/GetProducts";
 export { GetRecipesResponseDtoZ } from "./dto/GetRecipes";
 export { SetClientMenuDayDtoZ } from "./dto/SetClientMenuDay";
