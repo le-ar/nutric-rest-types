@@ -11,6 +11,7 @@ export const GetClientMenuDayResponseZ = z.object({
   month: z.number().int().min(1).max(12),
   year: z.number().int(),
   clientEnergyContent: EnergyContentZ.optional(),
+  paid: z.boolean(),
   parts: z
     .array(
       ClientMenuDayPartZ.extend({
