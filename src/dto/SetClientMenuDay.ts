@@ -6,5 +6,5 @@ export const SetClientMenuDayDtoZ = z.object({
   month: z.string().min(1).max(12),
   year: z.string().min(1),
   clientUid: z.string().uuid().min(1),
-  menu: z.array(ClientMenuDayPartZ),
+  menu: z.array(ClientMenuDayPartZ.omit({ uid: true })),
 });
