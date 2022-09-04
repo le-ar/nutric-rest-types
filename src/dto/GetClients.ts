@@ -6,7 +6,8 @@ export const GetClientsResponseDtoZ = z.array(
     userProfile: z.object({
       firstName: z.string(),
       lastName: z.string(),
-      middleName: z.string().nullable(),
+      middleName: z.string().nullable().optional(),
+      img: z.string().nullable().optional(),
     }),
     userContact: z.object({
       phone: z.string(),
