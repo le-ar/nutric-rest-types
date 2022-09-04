@@ -8,6 +8,7 @@ export const GetMeResponseDtoZ = z.object({
     firstName: z.string(),
     lastName: z.string(),
     middleName: z.string().nullable().optional(),
+    img: z.string().nullable().optional(),
   }),
   contacts: z.object({
     phone: z.string(),
