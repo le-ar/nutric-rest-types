@@ -7,7 +7,7 @@ export const ProductZ = z.object({
   uid: z.string().uuid(),
   isPublic: z.boolean(),
   hasPublishRequest: z.boolean(),
-  name: z.string().min(4).max(128),
+  name: z.string().min(4),
   img: z.string(),
   weightType: WeightTypeZ,
   category: ProductCategoryZ,
